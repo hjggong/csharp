@@ -49,8 +49,8 @@ namespace Day2
             Goods g1 = new Goods(1001, "볼펜", 1000);
             Goods g2 = new Goods(1002, "연필", 500);
             Goods g3 = new Goods(1003, "딸기", 6000);
+            
 
-            Hashtable obj = new Hashtable();
         }
     }
 }
