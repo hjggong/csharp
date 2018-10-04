@@ -53,7 +53,7 @@ namespace ChatClient
 
                     Thread thd_Receive = new Thread(new ThreadStart(cht_Class.Chat_Process));
                     thd_Receive.Start();
-                    Message_Snd("<"+txt_Name+"> 님께서 접속하셨습니다.", true);
+                    Message_Snd("<" + txt_Name.Text + "> 님께서 접속하셨습니다.", true);
                     cmd_Connect.Text = "Logout";
                 }
                 catch(Exception err)
@@ -63,7 +63,7 @@ namespace ChatClient
             }
             else
             {
-                Message_Snd("<" + txt_Name + "> 님께서 접속해제하셨습니다.", false);
+                Message_Snd("<" + txt_Name.Text + "> 님께서 접속해제하셨습니다.", false);
                 cmd_Connect.Text = "Login";
                 cht_Class.Chat_Close();
                 ntwStream.Close();
